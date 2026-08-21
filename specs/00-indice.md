@@ -5,7 +5,7 @@ dominio: "Governança de Specs (SDD)"
 status: "🟢 Vigente"
 tags: ["processo", "indice", "sdd"]
 relacionados: ["[[00-contexto]]", "[[00-prompt-revisor]]", "[[00-prompt-executor]]"]
-proximo_numero_plan: "01" # NN da próxima plan a nascer. Só sobe. Nunca reaproveitado, mesmo que uma plan
+proximo_numero_plan: "06" # NN da próxima plan a nascer. Só sobe. Nunca reaproveitado, mesmo que uma plan
                            # seja depois removida por síntese — ver §5.
 ---
 
@@ -56,7 +56,11 @@ duas, sempre, na mesma ação, exceto a remoção final, que apaga a própria pl
 
 | # | Plan | Objetivo | Depende de | Status | Destino |
 |---|---|---|---|---|---|
-| — | _(vazio — a primeira plan do repositório é preencher [[00-contexto]])_ | — | — | — | — |
+| 1 | [plan-01-relatorio-operacional](plan/plan-01-relatorio-operacional.md) | Relatório Operacional | — | 🔴 A executar | specs/01-relatorio-operacional.md |
+| 2 | [plan-02-pipeline-rag](plan/plan-02-pipeline-rag.md) | Pipeline RAG | plan-01 | 🔴 A executar | specs/02-pipeline-rag.md |
+| 3 | [plan-03-assistente-llm](plan/plan-03-assistente-llm.md) | Assistente LLM | plan-02 | 🔴 A executar | specs/03-assistente-llm.md |
+| 4 | [plan-04-avaliacao-rag](plan/plan-04-avaliacao-rag.md) | Avaliação RAG | plan-03 | 🔴 A executar | specs/04-avaliacao-rag.md |
+| 5 | [plan-05-sistema-inferencia](plan/plan-05-sistema-inferencia.md) | Sistema de Inferência | plan-04 | 🔴 A executar | specs/05-sistema-inferencia.md |
 
 ---
 

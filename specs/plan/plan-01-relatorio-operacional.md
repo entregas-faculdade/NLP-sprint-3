@@ -1,5 +1,5 @@
 ---
-status: drafting
+status: "🔴 A executar"
 dominio: inteligencia-operacional
 prioridade: alta
 ---
