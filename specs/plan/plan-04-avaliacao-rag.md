@@ -1,5 +1,5 @@
 ---
-status: "🟠 Em revisão"
+status: "🟢 Aprovada"
 dominio: pln-avaliacao
 prioridade: alta
 ---

@@ -56,8 +56,7 @@ duas, sempre, na mesma ação, exceto a remoção final, que apaga a própria pl
 
 | # | Plan | Objetivo | Depende de | Status | Destino |
 |---|---|---|---|---|---|
-| 1 | [plan-04-avaliacao-rag](plan/plan-04-avaliacao-rag.md) | Avaliação RAG | plan-03 | 🟠 Em revisão | specs/04-avaliacao-rag.md |
-| 2 | [plan-05-sistema-inferencia](plan/plan-05-sistema-inferencia.md) | Sistema de Inferência | plan-04 | 🔴 A executar | specs/05-sistema-inferencia.md |
+| 1 | [plan-05-sistema-inferencia](plan/plan-05-sistema-inferencia.md) | Sistema de Inferência | plan-04 | 🟠 Em revisão | specs/05-sistema-inferencia.md |
 
 ---
 
@@ -127,6 +126,7 @@ Toda plan declara, **desde o momento em que é escrita**, para onde seu conteúd
 | [plan-01-relatorio-operacional](plan/plan-01-relatorio-operacional.md) | 🟢 | 2026-08-21 | — | specs/01-relatorio-operacional.md |
 | [plan-02-pipeline-rag](plan/plan-02-pipeline-rag.md) | 🟢 | 2026-08-21 | — | specs/02-pipeline-rag.md |
 | [plan-03-assistente-llm](plan/plan-03-assistente-llm.md) | 🟢 | 2026-08-21 | — | specs/03-assistente-llm.md |
+| [plan-04-avaliacao-rag](plan/plan-04-avaliacao-rag.md) | 🟢 | 2026-08-21 | — | specs/04-avaliacao-rag.md |
 
 > Exemplo, logo após a aprovação (síntese ainda não autorizada):
 > `| [plan-05-tabela-sessions](plan/plan-05-tabela-sessions.md) | 🟢 | 2026-07-28 | — | arquitetura/04-dados.md · adr/003-jwt-vs-sessao.md |`

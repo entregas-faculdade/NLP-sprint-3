@@ -1,5 +1,5 @@
 ---
-status: "🔴 A executar"
+status: "🟠 Em revisão"
 dominio: infraestrutura-inferencia
 prioridade: media
 ---
