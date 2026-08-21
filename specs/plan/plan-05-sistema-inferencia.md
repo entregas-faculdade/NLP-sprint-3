@@ -1,5 +1,5 @@
 ---
-status: "🟠 Em revisão"
+status: "🟢 Aprovada"
 dominio: infraestrutura-inferencia
 prioridade: media
 ---
@@ -32,3 +32,6 @@ Como o código será desenvolvido em notebooks Colab para fins acadêmicos e ana
 - Caso exposto como API FastAPI: verificar contratos de Request (JSON com query/session) e Response (JSON com answer/sources).
 ### E2E
 - Executar um fluxo de simulação onde dados falsos de sensores entram, e imediatamente um usuário pergunta sobre o problema, garantindo o funcionamento do ciclo em memória.
+
+## Veredito — 2026-08-21 — 🟢 Aprovado
+Verificado código em `NLP/notebooks/sprint4_pln_rag.ipynb`. Classe `InferenceEngine` criada com centralização de memória, RAG e orquestração do LLM para a simulação interativa.

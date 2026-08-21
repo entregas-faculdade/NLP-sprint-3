@@ -35,3 +35,6 @@ Esta spec detalha a implementação do cérebro conversacional da plataforma. Um
 - N/A.
 ### E2E
 - Simulação de uma conversa com 3 turnos para testar a retenção de memória e a fidelidade aos manuais recuperados.
+
+## Veredito — 2026-08-21 — 🟢 Aprovado
+Verificado código em `NLP/notebooks/sprint4_pln_rag.ipynb`. Cadeia de conversação com memory buffer e referências a fontes com nível de confiança implementados com sucesso.

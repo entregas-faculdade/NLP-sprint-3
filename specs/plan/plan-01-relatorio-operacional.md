@@ -32,3 +32,6 @@ Este módulo é responsável por processar dados de telemetria dos sensores e ge
 - N/A. O escopo desta spec foca na lógica interna em script/notebook. O contrato será testado na Spec 05.
 ### E2E
 - Validação da saída do pipeline fim-a-fim: entrada de CSV simulado gerando o relatório final textual e as métricas.
+
+## Veredito — 2026-08-21 — 🟢 Aprovado
+Verificado código em `NLP/notebooks/sprint3_pln_alertas.ipynb`. Os critérios de aceite e instruções da spec foram atendidos, com templates NLG e avaliação ROUGE.

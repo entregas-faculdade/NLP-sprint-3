@@ -1,0 +1,41 @@
+{
+  "alertas_teste": [
+    {
+      "dados": {"motor": "MOT-PROD-001", "temperatura": 47, "aceleracao": 0.47, "timestamp": "2026-05-19T11:48:55"},
+      "severidade_esperada": "crítico",
+      "resumo_referencia": "O motor MOT-PROD-001 atingiu níveis críticos. A temperatura registrou pico de 47°C e a aceleração 0.47g. É necessária a parada imediata do equipamento."
+    },
+    {
+      "dados": {"motor": "MOT-UTIL-003", "temperatura": 36, "aceleracao": 0.25, "timestamp": "2026-05-19T11:48:55"},
+      "severidade_esperada": "moderado",
+      "resumo_referencia": "Alerta moderado para o motor MOT-UTIL-003. A temperatura está em 36°C e aceleração em 0.25g. Recomenda-se programar uma inspeção preventiva em breve."
+    },
+    {
+      "dados": {"motor": "MOT-COMP-007", "temperatura": 32, "aceleracao": 0.15, "timestamp": "2026-05-19T11:48:55"},
+      "severidade_esperada": "leve",
+      "resumo_referencia": "Leve oscilação no motor MOT-COMP-007. Leitura de temperatura de 32°C e aceleração de 0.15g. Manter sob monitoramento."
+    }
+  ],
+  "qa_troubleshooting": [
+    {"pergunta": "Qual a temperatura máxima permitida para o enrolamento do Siemens 1LA7?", "ground_truth": "A temperatura máxima do enrolamento é de 155°C (Classe F)."},
+    {"pergunta": "Qual o limite de vibração RMS para o Motor W22 Plus?", "ground_truth": "A vibração máxima permitida é de 2,8 mm/s RMS, conforme a norma ISO 10816."},
+    {"pergunta": "De quanto em quanto tempo devo lubrificar os rolamentos do W22 Plus?", "ground_truth": "Os rolamentos devem ser lubrificados a cada 2.000 horas de operação ou 6 meses."},
+    {"pergunta": "Qual a resistência mínima de isolamento para o motor Siemens 1LA7?", "ground_truth": "A resistência mínima de isolamento é 100 MOhm medida a 1000V DC por 60 segundos."},
+    {"pergunta": "Qual o torque recomendado para os parafusos de fixação do W22 Plus?", "ground_truth": "O torque de aperto dos parafusos de fixação deve ser de 25 N.m."},
+    {"pergunta": "Qual o intervalo de relubrificação para o Siemens 1LA7 sob carga normal?", "ground_truth": "O intervalo de relubrificação é de 3500 horas para os rolamentos."},
+    {"pergunta": "Quais os limites de desalinhamento do acoplamento no W22 Plus?", "ground_truth": "O desalinhamento angular máximo é de 0,1 mm e o paralelo máximo é de 0,05 mm."},
+    {"pergunta": "Durante condições de sobrecarga, a corrente do 1LA7 pode atingir quanto?", "ground_truth": "Durante sobrecarga, a corrente pode atingir 6x a corrente nominal."},
+    {"pergunta": "Qual a folga axial máxima permitida no eixo do Siemens 1LA7?", "ground_truth": "A folga axial máxima do eixo é de 0,3 mm."},
+    {"pergunta": "Quantas vezes a corrente nominal atinge a corrente de partida no W22 Plus?", "ground_truth": "A corrente de partida atinge 6,5x a corrente nominal."},
+    {"pergunta": "O motor W22 Plus opera sob qual classe de isolamento?", "ground_truth": "O motor opera com isolamento Classe F."},
+    {"pergunta": "Qual é a potência do motor W22 Plus 100L?", "ground_truth": "A potência é de 4,0 kW (5,5 HP)."},
+    {"pergunta": "Qual a velocidade do motor Siemens tipo 1LA7?", "ground_truth": "A velocidade é de 1455 RPM."},
+    {"pergunta": "Qual a proteção (IP) do motor ABB M3BP?", "ground_truth": "O grau de proteção é IP55."},
+    {"pergunta": "Qual a eficiência do motor ABB M3BP 200 MLA?", "ground_truth": "A eficiência é de 92,1% (IE3)."},
+    {"pergunta": "Qual o rolamento dianteiro (Drive End) do W22 Plus?", "ground_truth": "O rolamento dianteiro é do tipo 6308-2Z."},
+    {"pergunta": "Qual o rolamento traseiro (Non-Drive End) do W22 Plus?", "ground_truth": "O rolamento traseiro é do tipo 6206-2Z."},
+    {"pergunta": "Qual a faixa de temperatura ambiente permitida para o W22 Plus?", "ground_truth": "O motor deve operar em temperatura ambiente entre -20°C a +40°C."},
+    {"pergunta": "O motor ABB M3BP possui fator de serviço contínuo?", "ground_truth": "Sim, ele opera em regime de Serviço Contínuo S1."},
+    {"pergunta": "A norma ISO 10816 Classe B se aplica a qual motor?", "ground_truth": "Aplica-se ao motor Siemens 1LA7 para os limites de vibração."}
+  ]
+}

@@ -30,3 +30,6 @@ Esta spec define a evolução do módulo de recuperação (retrieval) semântica
 - N/A. (A API será coberta na Spec 05).
 ### E2E
 - Consulta simulando um estado de alerta em um motor específico e verificando se os top-k chunks recuperados são pertinentes àquele motor e ao problema reportado.
+
+## Veredito — 2026-08-21 — 🟢 Aprovado
+Verificado código em `NLP/notebooks/sprint4_pln_rag.ipynb`. Chunking recursivo, base FAISS e SentenceTransformers aplicados conforme critérios.

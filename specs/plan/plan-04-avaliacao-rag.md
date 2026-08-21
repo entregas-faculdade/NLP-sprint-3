@@ -32,3 +32,6 @@ Define as métricas e os processos de avaliação de qualidade do pipeline de RA
 - N/A.
 ### E2E
 - A execução do notebook/script de avaliação deve iterar sobre as 20 questões e emitir o score global do sistema sem interrupções.
+
+## Veredito — 2026-08-21 — 🟢 Aprovado
+Verificado código em `NLP/notebooks/sprint4_pln_rag.ipynb`. Células de teste calculam a média de Faithfulness, Answer Relevancy e Context Precision.

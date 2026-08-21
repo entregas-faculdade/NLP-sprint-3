@@ -5,7 +5,7 @@ dominio: "Governança de Specs (SDD)"
 status: "🟢 Vigente"
 tags: ["processo", "indice", "sdd"]
 relacionados: ["[[00-contexto]]", "[[00-prompt-revisor]]", "[[00-prompt-executor]]"]
-proximo_numero_plan: "06" # NN da próxima plan a nascer. Só sobe. Nunca reaproveitado, mesmo que uma plan
+proximo_numero_plan: "07" # NN da próxima plan a nascer. Só sobe. Nunca reaproveitado, mesmo que uma plan
                            # seja depois removida por síntese — ver §5.
 ---
 
@@ -56,7 +56,7 @@ duas, sempre, na mesma ação, exceto a remoção final, que apaga a própria pl
 
 | # | Plan | Objetivo | Depende de | Status | Destino |
 |---|---|---|---|---|---|
-| 1 | [plan-05-sistema-inferencia](plan/plan-05-sistema-inferencia.md) | Sistema de Inferência | plan-04 | 🟠 Em revisão | specs/05-sistema-inferencia.md |
+| 1 | [plan-06-adequacao-condicoes](plan/plan-06-adequacao-condicoes.md) | Adequação aos Critérios Finais da Sprint 3/4 | — | 🔴 A executar | — |
 
 ---
 
@@ -127,6 +127,7 @@ Toda plan declara, **desde o momento em que é escrita**, para onde seu conteúd
 | [plan-02-pipeline-rag](plan/plan-02-pipeline-rag.md) | 🟢 | 2026-08-21 | — | specs/02-pipeline-rag.md |
 | [plan-03-assistente-llm](plan/plan-03-assistente-llm.md) | 🟢 | 2026-08-21 | — | specs/03-assistente-llm.md |
 | [plan-04-avaliacao-rag](plan/plan-04-avaliacao-rag.md) | 🟢 | 2026-08-21 | — | specs/04-avaliacao-rag.md |
+| [plan-05-sistema-inferencia](plan/plan-05-sistema-inferencia.md) | 🟢 | 2026-08-21 | — | specs/05-sistema-inferencia.md |
 
 > Exemplo, logo após a aprovação (síntese ainda não autorizada):
 > `| [plan-05-tabela-sessions](plan/plan-05-tabela-sessions.md) | 🟢 | 2026-07-28 | — | arquitetura/04-dados.md · adr/003-jwt-vs-sessao.md |`
