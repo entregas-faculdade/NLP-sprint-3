@@ -31,7 +31,10 @@ inegociável ou o mapa de roteamento. Nunca por conta própria fora de uma plan.
 > agentes) e **o que ele explicitamente NÃO é**. Sem marketing, sem histórico. Um agente lê isto e para de
 > supor. Proibido descrever a estrutura de pastas aqui — isso é da §3.
 
-<!-- PREENCHER -->
+Este repositório contém a **solução de PLN (Processamento de Linguagem Natural)** do projeto Forzy (Challenge FIAP - Sprints 3 e 4), um módulo de inteligência aplicado ao monitoramento e manutenção preditiva de motores elétricos industriais via digital-twin. 
+Ele resolve o problema de inteligência operacional convertendo telemetria numérica em relatórios textuais compreensíveis (NLG) e fornecendo um assistente de troubleshooting conversacional (RAG) embasado em manuais técnicos.
+Seu consumo é focado nos avaliadores técnicos e na integração futura com o sistema de monitoramento.
+Ele explicitamente **NÃO** é a plataforma de telemetria completa nem o backend principal, atuando estritamente como o motor autônomo de IA e linguagem.
 
 ---
 

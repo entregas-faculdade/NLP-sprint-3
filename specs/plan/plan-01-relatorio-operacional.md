@@ -1,5 +1,5 @@
 ---
-status: "🔴 A executar"
+status: "🟢 Aprovada"
 dominio: inteligencia-operacional
 prioridade: alta
 ---
