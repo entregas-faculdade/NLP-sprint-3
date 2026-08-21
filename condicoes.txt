@@ -1,0 +1,69 @@
+Sprints 3 e 4 – Inteligência Operacional e Integração da Solução
+
+Challenge FIAP ? Forzy | Processamento de Linguagem Natural
+
+Contexto do projeto: solução de digital-twin para monitoramento e manutenção preditiva de motores elétricos industriais
+
+Objetivo
+
+Consolidar as capacidades de PLN da plataforma em duas frentes complementares. Na primeira (Sprint 3), implementar o módulo de geração automática de linguagem natural que transforma outputs numéricos dos modelos de ML/DL — alertas, desvios e estados operacionais — em narrativas compreensíveis para o operador. Na segunda (Sprint 4), construir o assistente conversacional de troubleshooting, integrando arquitetura RAG sobre a documentação técnica do ativo com o contexto operacional real gerado na etapa anterior, entregando a solução PLN completa e demonstrável.
+
+Entregáveis
+
+Sistema de Geração de Resumos Textuais de Alertas
+
+Desenvolver módulo que converta os parâmetros do alerta (tipo de desvio, magnitude, sensor afetado, timestamp) em frases descritivas em português técnico acessível.
+Exemplo esperado de saída: 'Alerta moderado detectado no Motor MT-042. A temperatura do enrolamento apresentou desvio de +18°C acima do baseline nas últimas 3 horas. Recomenda-se verificação do sistema de refrigeração.'
+Implementar ao menos três templates de narrativa: alerta leve, alerta moderado e alerta crítico, com vocabulário e tom adequados a cada nível de urgência.
+
+Classificação Textual e Relatório de Estado Operacional
+
+Aplicar PLN para categorizar automaticamente os eventos registrados: manutenção corretiva, manutenção preventiva, anomalia elétrica, anomalia mecânica, operação normal.
+Utilizar modelo de classificação de texto (zero-shot com LLM ou classificador fine-tuned) e avaliar com F1-score por categoria.
+Gerar relatório diário/semanal em linguagem natural sumarizando: alertas emitidos, equipamentos em risco, tendências observadas e recomendações preliminares. Cada afirmação deve referenciar o dado de sensor de origem (rastreabilidade).
+Avaliar os textos gerados com métricas ROUGE sobre referências manuais e checklist de clareza, precisão e utilidade.
+
+Pipeline RAG para Documentação Técnica do Ativo
+
+Realizar chunking inteligente dos documentos técnicos (manuais, datasheets, fichas de manutenção), preservando coerência semântica e cabeçalhos técnicos.
+Gerar embeddings dos chunks e indexar em base vetorial (FAISS, ChromaDB ou equivalente).
+Implementar retriever com re-ranking por relevância contextual, usando o estado atual do equipamento como filtro de busca.
+Avaliar a qualidade da recuperação: precisão dos chunks retornados vs. gabarito de perguntas-resposta construído manualmente a partir dos documentos.
+
+Assistente Conversacional de Troubleshooting
+
+Integrar o retriever RAG a um LLM (modelo local como Llama-3 ou Qwen via Colab, ou API) para respostas fundamentadas nos documentos recuperados.
+Definir prompt de sistema com persona de assistente técnico especialista em motores elétricos, instruindo o modelo a citar a fonte e indicar o nível de confiança da resposta.
+Implementar histórico de conversa (memória de curto prazo) para manutenção de contexto ao longo do diálogo de troubleshooting.
+Injetar os resumos de alerta e o estado operacional atual (Entregável 1) como contexto adicional no prompt, permitindo respostas sensíveis à situação real do ativo.
+
+Avaliação e Demonstração da Solução Conversacional
+
+Construir conjunto de avaliação com 20 perguntas de troubleshooting com respostas de referência (ground truth) extraídas dos manuais.
+Medir: faithfulness (resposta sustentada pelo documento recuperado?), answer relevancy (resposta atende à pergunta?) e context precision (chunks recuperados são relevantes?).
+Demonstrar o assistente em ao menos três cenários de falha distintos: anomalia elétrica, anomalia mecânica e consulta a procedimento de manutenção preventiva.
+Documentar os limites do sistema: perguntas fora do escopo, situações de alucinação identificadas e estratégias de mitigação adotadas.
+
+Formato da Entrega
+
+Pasta no Drive ou repositório GitHub privado contendo:
+Notebook Colab (sprint3_pln_alertas.ipynb) com geração de resumos, classificação de eventos e relatório operacional executados sobre dados simulados ou reais do projeto.
+Notebook Colab (sprint4_pln_rag.ipynb) com pipeline RAG completo: chunking, indexação, retriever, integração com LLM e avaliação.
+Conjunto de alertas-teste com resumos de referência (para ROUGE) e conjunto de perguntas de troubleshooting com respostas de referência (para faithfulness/relevancy).
+Documento final unificado com: templates de narrativa, critérios de classificação, arquitetura do assistente RAG, métricas obtidas e limites identificados.
+Vídeo curto (3 a 5 minutos) demonstrando o assistente nos três cenários de falha, postado como 'não listado' no YouTube e com link no GitHub.
+
+Avaliação
+
+Qualidade e naturalidade dos resumos textuais para os três níveis de alerta (20%)
+Desempenho do classificador de eventos e qualidade do relatório operacional (ROUGE + checklist) (20%)
+Qualidade do pipeline RAG: chunking, indexação e desempenho do retriever (20%)
+Qualidade das respostas do assistente conversacional (faithfulness e answer relevancy) (25%)
+Integração com contexto operacional real, demonstração nos cenários e documentação dos limites (15%)
+
+
+
+
+
+Link do projeto pt1
+sprint2_pln_consulta

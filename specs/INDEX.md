@@ -1,0 +1,36 @@
+# 🧭 Mapa de Especificações: Forzy-PLN-Sprint3
+
+> **Atenção IAs:** Este diretório é a fonte da verdade do projeto. **Comece por `00-contexto.md`** — nenhuma
+> tarefa começa antes dele.
+
+## Ordem de leitura
+
+| # | Arquivo | O que é |
+|---|---|---|
+| 1 | **`00-contexto.md`** | O que este repositório é, regras inegociáveis e o mapa "que spec eu leio para esta tarefa?" |
+| 2 | **`00-knowledge.md`** | Roteador de capacidades: situação → skill/command/agent/hook. Universal. |
+| 3 | **`00-indice.md`** | Fila de execução das plans, com dependências e status. |
+| 4 | **`00-prompt-revisor.md`** / **`00-prompt-executor.md`** | O prompt do seu papel. Leia o seu, conheça o outro. |
+| 5 | `arquitetura/` → `specs/` → `adr/` | O detalhe: o COMO, o QUÊ e o POR QUÊ. |
+
+## Estrutura do Vault
+
+- 📄 **`00-*.md`**: as specs de processo — contexto, roteamento de capacidades, índice de execução e os prompts
+  dos dois papéis. São a entrada de qualquer agente.
+- 📁 **`arquitetura/`**: design vivo e regras globais (O COMO).
+- 📁 **`specs/`**: specs vivas de funcionalidades (O QUÊ).
+- 📁 **`adr/`**: decisões imutáveis (O POR QUÊ). Decisão nova = ADR novo.
+- 📁 **`plan/`**: **todas** as plans (`plan-NN-<slug>.md`), do nascimento ao expurgo — é por elas que toda
+  alteração do repositório passa. Não há subpasta: o `status` do frontmatter é que diz se a plan está na fila
+  (🔴 🟡 🟠 🔵 ⛔), aprovada aguardando síntese (🟢) ou já sintetizada aguardando expurgo (⚪). A skill
+  `spec-atualizar`, disparada manualmente, reverifica as ⚪ e as remove; depois disso o rastro fica no
+  histórico do Git, não nesta pasta.
+- 📁 **`_templates/`**: moldes (`template-spec`, `template-arquitetura`, `template-adr`, `template-plan`).
+
+## O ciclo em uma linha
+
+`revisor escreve plan` → `executor executa (worktree, sem commit)` → `revisor verifica e aprova` → `usuário
+autoriza` → `revisor sintetiza nas specs fixas (plan vira ⚪)` → `usuário commita` → `spec-atualizar
+reverifica e expurga a plan`
+
+Detalhe em [`README.md`](README.md).
