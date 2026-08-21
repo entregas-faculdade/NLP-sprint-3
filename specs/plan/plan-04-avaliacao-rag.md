@@ -1,5 +1,5 @@
 ---
-status: "🔴 A executar"
+status: "🟠 Em revisão"
 dominio: pln-avaliacao
 prioridade: alta
 ---

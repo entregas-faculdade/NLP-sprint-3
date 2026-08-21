@@ -1,5 +1,5 @@
 ---
-status: "🔴 A executar"
+status: "🟢 Aprovada"
 dominio: pln-assistente-conversacional
 prioridade: alta
 ---
