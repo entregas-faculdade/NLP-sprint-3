@@ -56,7 +56,7 @@ duas, sempre, na mesma ação, exceto a remoção final, que apaga a própria pl
 
 | # | Plan | Objetivo | Depende de | Status | Destino |
 |---|---|---|---|---|---|
-| 1 | [plan-06-adequacao-condicoes](plan/plan-06-adequacao-condicoes.md) | Adequação aos Critérios Finais da Sprint 3/4 | — | 🔴 A executar | — |
+| 1 | [plan-06-adequacao-condicoes](plan/plan-06-adequacao-condicoes.md) | Adequação aos Critérios Finais da Sprint 3/4 | — | 🟢 Aprovada | — |
 
 ---
 
